@@ -1,0 +1,57 @@
+/* Reset of my stylesheet */ 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #FFD5E9;   
+}
+
+.nav-link {
+    
+    color: black;
+    
+}
+
+.nav-link:hover {
+    color: #99236C;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    float: inline-end;
+}
+
+/* Setting my styles for mobile */
+
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 778px) {
+    .navbar-toggler {
+        float: inline-end;
+    }
+
+}
+
+/* Setting my styles for tablets and desktops */
+
+@media screen and (min-width: 992px) {
+    .container-sm-lg {
+        display: flex;
+    }
+
+    .navbar-nav {
+        gap: 6px;
+    }
+
+}
