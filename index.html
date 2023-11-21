@@ -15,13 +15,13 @@
 
 <body>
 
-    <!--START : Creation de mon header-->
+    <!--Début : Creation de mon header-->
 
     <header>
         <nav class="navbar navbar-expand-lg px-5">
             <div class="container-sm-lg">
             
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#mainPage">
                     <img src="assets/images/Logo Toutes Ensembles.jpg" class="w-50" alt="Logo Association Toutes Ensembles" >
                 </a>
 
@@ -74,13 +74,63 @@
 
     </header>
 
-    <!--END : Creation de mon header -->
+    <!--Fin: Creation de mon header -->
 
 
-    <!--START : Creation du corps de ma page -->
+    <!--Début : Creation du corps de ma page -->
     <main>
 
-        
+        <!-- Ajout d'un carousel -->
+
+        <div class="mainPage">
+        <div class="container-fluid py-3" style="max-width: 800px; box-sizing:border-box">
+            <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/ToutesEnsembles/assets/images/gros-plan-gens-discutant-problemes.jpg" class="d-block w-100" alt="Photo discussion groupée">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Accueillie et écoutée par nos équipes</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/ToutesEnsembles/assets/images/bride-faire-dans-petit-miroir.jpg" class="d-block w-100" alt="Femme se maquillant">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Accompagnée pour vous reconstruire</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="/ToutesEnsembles/assets/images/belles-femmes-passent-du-temps-ensemble.jpg" class="d-block w-100" alt="Femmes attablées">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Entourée de femmes à votre écoute</h5>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
+            </button>
+
+            </div>
+        </div>
+    </div>
+
+        <!-- Fin du carousel -->
+    
+        <!--Début : Section Qui sommes-nous ? -->
         <section class="aboutUs">
                 
             <div class="card mb-3 border-light">
@@ -114,7 +164,9 @@
                 </div>
             </div>
 
-        </section
+        </section>
+
+        <!--Fin : Section Qui sommes-nous ? -->
 
         <section class="sideEffects">
 

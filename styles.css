@@ -56,7 +56,23 @@ nav {
     float: inline-end;
 }
 
+/* Start : styles for my carousel */ 
 
+.mainPage {
+    background-color: #FFD5E9;
+}
+
+.carousel-item
+h5 {
+    color: black;
+    font-weight: bold;
+}
+
+.carousel-item
+img
+{
+    opacity: 80%;
+}
 /* Start : styles for my section About Us */ 
 
 .aboutUs {
@@ -114,4 +130,5 @@ nav {
     .aboutUs > .card {
         width: 80%;
     }
+
 }
