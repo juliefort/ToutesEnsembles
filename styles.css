@@ -60,6 +60,7 @@ nav {
 
 .mainPage {
     background-color: #FFD5E9;
+    width: 100%;
 }
 
 .carousel-item
@@ -73,19 +74,22 @@ img
 {
     opacity: 80%;
 }
-/* Start : styles for my section About Us */ 
+/* Start : styles for my section About Us and Side Effects */ 
 
-.aboutUs {
+.aboutUs,
+.sideEffects {
     display: flex;
     margin-top: 20px;
+    padding: 10px;
 }
 
-.aboutUs > .card {
+.aboutUs > .card,
+.sideEffects > .card {
     background-color: #FFF5F5;
 }
 
-.aboutUs
-.card-body {
+.card-body
+{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -93,12 +97,12 @@ img
     gap: 10px;
 }
 
+
 /* Setting my styles for mobile */
 
 
-@media screen and (min-width: 576px) {
-    
-    
+@media screen and (max-width: 576px) {
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -123,12 +127,15 @@ img
         gap: 6px;
     }
 
-    .aboutUs {
+    .aboutUs,
+    .sideEffects {
         justify-content: center;
+        padding: 0;
     }
 
-    .aboutUs > .card {
+    .aboutUs > .card,
+    .sideEffects > .card {
         width: 80%;
     }
-
+    
 }
