@@ -39,19 +39,19 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href=".sideEffects"> 
+                            <a class="nav-link" href="#sideEffects"> 
                                 Les effets secondaires
                             </a>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true"> 
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="true"> 
                                 Vous accompagner
                             </a>
 
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Dans la maladie</a></li>
-                                <li><a class="dropdown-item" href="#">Dans la réémission</a></li>
+                                <li><a class="dropdown-item" href="#support">Dans la maladie</a></li>
+                                <li><a class="dropdown-item" href="#support">Dans la rémission</a></li>
                             </ul>
                         </li>
 
@@ -82,7 +82,7 @@
 
         <!-- Ajout d'un carousel -->
 
-        <div class="mainPage">
+        <div class="mainPage" id="mainPage">
         <div class="container-fluid py-3" style="max-width: 800px; box-sizing:border-box">
             <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -131,7 +131,7 @@
         <!-- Fin du carousel -->
     
         <!--Début : Section Qui sommes-nous ? -->
-        <section class="aboutUs">
+        <section class="aboutUs" id="aboutUs">
                 
             <div class="card mb-3 border-light">
                 <div class="row g-0">
@@ -169,9 +169,10 @@
 
         <!--Fin : Section Qui sommes-nous ? -->
 
-        <section class="sideEffects">
+        <!--Début : Section Effets secondaires -->
+        <section class="sideEffects" id="sideEffects">
             <div class="card mb-3 border-light">
-                <div class="row g-0">
+                <div class="row">
                     <div class="col-md-4">
                 <img src="/ToutesEnsembles/assets/images/7070084.jpg"  class="img-fluid rounded-start" alt="Photo examen cancer du sein">
                     </div>
@@ -201,11 +202,58 @@
             </div>
 
         </section>
+        <!-- Fin : Section Effets secondaires -->
     
 
-        <section class="carroussel">
-            
+        <!--Début : Section Vous accompagner -->
+        <section class="support mb-3 d-flex flex-wrap justify-content-center" id="support">
+
+            <div class="card" style="width: 22rem">
+                <img class="card-img-top" src="/ToutesEnsembles/assets/images/femme-se-remet-cancer-du-sein.jpg" alt="photo cancer sein">
+                    
+                <button class="button rounded px-5 py-1 border-white" type="button" data-bs-toggle="collapse" data-bs-target="#toggleText1" aria-expanded="false" aria-controls="#toggleText1">Dans la maladie</button
+                       
+                    <div class="col">
+                        <div class="collapse" id="toggleText1">
+                            <div class="card-body text-center">
+                                <p class="card-text">
+                                Toutes Ensembles et son équipe s'engage à vous accompagner à travers différents ateliers 
+                                (socio-esthétique, d'activité physique, nutritionnels, sophrologiques...) pour vous permettre 
+                                de recevoir une oreille attentive durant ce processus et vous apporter un soutien psychologique. 
+                                Nous avons donc mis en place et à votre disposition une Maison Toutes Ensembles, tel un cocon, qui 
+                                vous accueille et vous permet de vous laisser aller le temps d'un instant.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                </div>
+            </div>
+
+            <div class="card" style="width: 22rem">
+                <img class="card-img-top" src="/ToutesEnsembles/assets/images/rémission.jpg" alt="photo cancer rémission">
+                
+                    <button class="button rounded px-5 py-1 border-white" type="button" data-bs-toggle="collapse" data-bs-target="#toggleText2" aria-expanded="false" aria-controls="#toggleText2">Dans la rémission</button
+                       
+                        <div class="col">
+                            <div class="collapse" id="toggleText2">
+                                <div class="card-body text-center">
+                                    <p class="card-text">
+                                        La rémission est une étape importante de la guérison qu'il ne faut 
+                                        pas négligler tout autant au niveau psychique que physique c'est pourquoi
+                                        nous continuons de vous accompagner pour vous aider à reprendre le contrôle 
+                                        de votre vie. À la Maison Toutes Ensembles, venez partager votre histoire 
+                                        que ce soit à travers nos groupes de paroles, prendre un soin facial...
+                                        Tout est consacré pour vous aider à vous reconstruire !
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+
         </section>
+        <!--Fin : Section Vous accompagner -->
 
         <section class="events">
             
@@ -216,14 +264,14 @@
         </section>
 
     </main>
-    <!--END : Creation du corps de ma page -->
+    <!--Fin : Creation du corps de ma page -->
 
-    <!--START : Creation de mon footer -->
+    <!-- Début : Creation de mon footer -->
     <footer>
 
 
     </footer>
-    <!--END : Creation de mon footer -->
+    <!--Fin : Creation de mon footer -->
     
     <script src="/ToutesEnsembles/assets/bootstrap.bundle.min.js"></script>
 </body>

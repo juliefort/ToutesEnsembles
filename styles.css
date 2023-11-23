@@ -1,4 +1,4 @@
-/* Reset of my stylesheet */ 
+/* Réinitialisation de mes styles */ 
 
 * {
     margin: 0;
@@ -7,15 +7,14 @@
 
 body {
     font-family: 'Manrope', sans-serif;
+    padding: 10px;
 }
 
-/* Setting global styles */ 
+/* Ajout des styles globaux */ 
 
 .card-title{
     color: #99236C;
 }
-
-
 
 img:hover {
     cursor: pointer;
@@ -34,7 +33,15 @@ img:hover {
 
 }
 
-/* Creating Styles globally for navbar */
+.aboutUs,
+.sideEffects,
+.support 
+{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Création des styles de la navbar */
 
 nav {
     display: flex;
@@ -56,7 +63,7 @@ nav {
     float: inline-end;
 }
 
-/* Start : styles for my carousel */ 
+/* Création des styles pour le carousel */ 
 
 .mainPage {
     background-color: #FFD5E9;
@@ -74,13 +81,13 @@ img
 {
     opacity: 80%;
 }
-/* Start : styles for my section About Us and Side Effects */ 
+/* Création des styles pour ma section aboutUs et sideEffects */ 
 
 .aboutUs,
-.sideEffects {
+.sideEffects
+{
     display: flex;
-    margin-top: 20px;
-    padding: 10px;
+    
 }
 
 .aboutUs > .card,
@@ -97,13 +104,24 @@ img
     gap: 10px;
 }
 
+/* Création des styles pour ma section Support */ 
 
-/* Setting my styles for mobile */
+.support {
+    background-color: #FFD5E9;
+    width: 100%;
+    gap : 5px;
+}
+
+
+
+/* Ajout des styles pour mobile */
 
 
 @media screen and (max-width: 576px) {
-  
+    
 }
+
+/* Ajout des styles pour tablette et desktop */
 
 @media screen and (min-width: 768px) {
     .navbar-toggler {
@@ -114,9 +132,12 @@ img
     .img-fluid {
         height: 100%;
     }
-}
 
-/* Setting my styles for tablets and desktops */
+    .support {
+        gap: 3rem;
+    }
+
+}
 
 @media screen and (min-width: 992px) {
     .container-sm-lg {
@@ -137,5 +158,5 @@ img
     .sideEffects > .card {
         width: 80%;
     }
-    
+
 }
