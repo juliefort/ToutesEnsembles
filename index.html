@@ -18,11 +18,11 @@
     <!--Début : Creation de mon header-->
 
     <header>
-        <nav class="navbar navbar-expand-lg px-5">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-sm-lg">
             
                 <a class="navbar-brand" href="#mainPage">
-                    <img src="assets/images/Logo Toutes Ensembles.jpg" class="w-50" alt="Logo Association Toutes Ensembles" >
+                    <img src="/ToutesEnsembles/assets/images/toutes ensembles Recherche sur le cancer.jpg" alt="Logo Association Toutes Ensembles" >
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle Navigation">
@@ -56,13 +56,13 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href=".events"> 
+                            <a class="nav-link" href="/ToutesEnsembles/evenement.html"> 
                                 L'agenda
                             </a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href=".joinUs"> 
+                            <a class="nav-link" href="#joinUs"> 
                                 Nous rejoindre
                             </a>
                         </li>
@@ -82,7 +82,7 @@
 
         <!-- Ajout d'un carousel -->
 
-        <div class="mainPage" id="mainPage">
+        <div class="mainPage d-flex" id="mainPage">
         <div class="container-fluid py-3" style="max-width: 800px; box-sizing:border-box">
             <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -182,10 +182,10 @@
                         <h4 class="card-title fw-bold">Les effets secondaires</h5>
                         <p class="card-text"> 
                             Des doutes sur les symptômes propres au cancer du sein ?
-                    N'hésitez pas à contacter votre médecin généraliste ou gynécologue afin d'effectuer un contrôle 
-                    de prévention. Il est capital de rappeler l'importance de se faire dépister tous les 2 ans entre 50 et 74 ans 
-                    et d'effectuer un contrôle de prévention lors des rendez-vous chez votre spécialiste en gynécologie. 
-                    En 2023, 61 214 nouveaux cas ont été diagnostiqués, et 12 100 décès sont recensés chaque année.        
+                            N'hésitez pas à contacter votre médecin généraliste ou gynécologue afin d'effectuer un contrôle 
+                            de prévention. Il est capital de rappeler l'importance de se faire dépister tous les 2 ans entre 50 et 74 ans 
+                            et d'effectuer un contrôle de prévention lors des rendez-vous chez votre spécialiste en gynécologie. 
+                            En 2023, 61 214 nouveaux cas ont été diagnostiqués, et 12 100 décès sont recensés chaque année.        
                         </p>
                         <p class="card-text">
                             Les principaux symptômes de la maladie peuvent être une grosseur au niveau du sein 
@@ -208,10 +208,10 @@
         <!--Début : Section Vous accompagner -->
         <section class="support mb-3 d-flex flex-wrap justify-content-center" id="support">
 
-            <div class="card" style="width: 22rem">
+            <div class="card" style="width: 24rem">
                 <img class="card-img-top" src="/ToutesEnsembles/assets/images/femme-se-remet-cancer-du-sein.jpg" alt="photo cancer sein">
                     
-                <button class="button rounded px-5 py-1 border-white" type="button" data-bs-toggle="collapse" data-bs-target="#toggleText1" aria-expanded="false" aria-controls="#toggleText1">Dans la maladie</button
+                <button class="button rounded px-5 py-1 border-white" type="button" data-bs-toggle="collapse" data-bs-target="#toggleText1" aria-expanded="false" aria-controls="#toggleText1">Dans la maladie</button>
                        
                     <div class="col">
                         <div class="collapse" id="toggleText1">
@@ -231,7 +231,7 @@
                 </div>
             </div>
 
-            <div class="card" style="width: 22rem">
+            <div class="card" style="width: 24rem">
                 <img class="card-img-top" src="/ToutesEnsembles/assets/images/rémission.jpg" alt="photo cancer rémission">
                 
                     <button class="button rounded px-5 py-1 border-white" type="button" data-bs-toggle="collapse" data-bs-target="#toggleText2" aria-expanded="false" aria-controls="#toggleText2">Dans la rémission</button
@@ -255,21 +255,56 @@
         </section>
         <!--Fin : Section Vous accompagner -->
 
-        <section class="events">
-            
-        </section>
+        <!--Début : Création d'un formulaire-->
+        <section id="joinUs">
 
-        <section class="joinUs">
-            
+        <div class="container col-lg-6 align-items-center">
+            <h3 class="text-center">Réjoignez nos bénévoles !</h3>
+            <form action="" method="GET">
+                <div class="col-12 mb-3">
+                    <label for="name">Nom</label>
+                    <input type="name" class="form-control" id="name" placeholder="Entrez votre Nom de famille" required>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="firstname">Prénom</label>
+                    <input type="firstname" class="form-control" id="firstname" placeholder="Entrez votre Prénom" required>
+                </div>
+                <div class="col-12 mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control col-12" id="email" placeholder="Entrez votre email" required>
+                </div>
+                <div class="col-12 text-center">
+                <button type="submit" class="button rounded px-5 py-1">Nous rejoindre</button>
+                </div>
+            </form>
+        </div>
         </section>
+        <!--Fin : Création d'un formulaire-->
 
     </main>
     <!--Fin : Creation du corps de ma page -->
 
     <!-- Début : Creation de mon footer -->
-    <footer>
+    <footer class="container">
+        
+            <div class="d-flex justify-content-center border-bottom border-white">
+                <a href="https://www.facebook.com/" class="nav-link py-3 px-5">
+                    <img src="/ToutesEnsembles/assets/images/icons8-facebook.svg" href="https://www.facebook.com/">
+                </a>
 
+                <a href="https://www.instagram.com/" class=" nav-link py-3 px-5">
+                    <img src="/ToutesEnsembles/assets/images/icons8-instagram.svg">
+                </a>
 
+                <a href="mailto:julie@email.com" class=" nav-link py-3 px-5">
+                    <img src="/ToutesEnsembles/assets/images/icons8-mail.svg">
+                </a>
+            </div>
+            <div class="row py-1 px-5">
+                <p class="text-center">
+                    © 2023 Copyright, Tout droit réservé
+                </p>
+            </div>
     </footer>
     <!--Fin : Creation de mon footer -->
     

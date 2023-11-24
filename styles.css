@@ -12,7 +12,8 @@ body {
 
 /* Ajout des styles globaux */ 
 
-.card-title{
+.card-title,
+h3{
     color: #99236C;
 }
 
@@ -33,25 +34,33 @@ img:hover {
 
 }
 
-.aboutUs,
-.sideEffects,
-.support 
+section
 {
     margin-top: 20px;
     padding: 10px;
 }
 
+footer,
+.mainPage,
+.support
+{
+    background-color: #FFD5E9;
+    border-radius: 10px;
+    justify-content: center;
+}
+
 /* Création des styles de la navbar */
 
 nav {
-    display: flex;
-    background-color: #FFD5E9;   
+    display: flex; 
 }
 
-.nav-link {
-    
-    color: black;
-    
+.navbar-brand > img {
+    width: 50%;
+}
+
+.nav-link {  
+    color: black; 
 }
 
 .nav-link:hover {
@@ -65,10 +74,10 @@ nav {
 
 /* Création des styles pour le carousel */ 
 
-.mainPage {
-    background-color: #FFD5E9;
-    width: 100%;
-}
+/*.mainPage {
+    border-radius: 10px;
+    justify-content: center;
+}*/
 
 .carousel-item
 h5 {
@@ -86,8 +95,7 @@ img
 .aboutUs,
 .sideEffects
 {
-    display: flex;
-    
+    display: flex;   
 }
 
 .aboutUs > .card,
@@ -107,10 +115,18 @@ img
 /* Création des styles pour ma section Support */ 
 
 .support {
-    background-color: #FFD5E9;
-    width: 100%;
     gap : 5px;
+    border-radius: 10px;
 }
+
+/* Création des styles pour mon formulaire */
+
+ form
+{
+    gap: 1em;
+} 
+
+/* Création des styles pour mon footer */
 
 
 
@@ -134,9 +150,15 @@ img
     }
 
     .support {
-        gap: 3rem;
+        gap: 1em;
     }
 
+    .mainPage,
+    .support 
+    {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -159,4 +181,7 @@ img
         width: 80%;
     }
 
+    .support {
+        gap: 3em;
+    }
 }
