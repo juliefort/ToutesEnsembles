@@ -13,7 +13,9 @@ body {
 /* Ajout des styles globaux */ 
 
 .card-title,
-h3{
+h2,
+h3,
+h5{
     color: #99236C;
 }
 
@@ -21,17 +23,19 @@ img:hover {
     cursor: pointer;
 }
 
-.button {
-    background-color: #FFD5E9;
-    border-style: inherit;
-    color: #99236C;
-}
-
-.button:hover {
+.button,
+.aboutUs
+a
+{
     background-color: #99236C;
     color: #FFD5E9;
     transition: 1s ;
+    border-style: inherit;
+}
 
+.button:hover {
+    background-color: #FFD5E9;
+    color: #99236C;
 }
 
 section
@@ -42,11 +46,17 @@ section
 
 footer,
 .mainPage,
-.support
+.support,
+.events
 {
     background-color: #FFD5E9;
     border-radius: 10px;
     justify-content: center;
+}
+
+.bold
+{
+    font-weight: bold;
 }
 
 /* Création des styles de la navbar */
@@ -63,9 +73,10 @@ nav {
     color: black; 
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.dropdown-item:hover
+{
     color: #99236C;
-    font-weight: bold;
 }
 
 .navbar-toggler {
@@ -73,11 +84,6 @@ nav {
 }
 
 /* Création des styles pour le carousel */ 
-
-/*.mainPage {
-    border-radius: 10px;
-    justify-content: center;
-}*/
 
 .carousel-item
 h5 {
@@ -115,8 +121,7 @@ img
 /* Création des styles pour ma section Support */ 
 
 .support {
-    gap : 5px;
-    border-radius: 10px;
+    gap : 5rem;
 }
 
 /* Création des styles pour mon formulaire */
@@ -126,24 +131,10 @@ img
     gap: 1em;
 } 
 
-/* Création des styles pour mon footer */
-
-
-
-/* Ajout des styles pour mobile */
-
-
-@media screen and (max-width: 576px) {
-    
-}
-
 /* Ajout des styles pour tablette et desktop */
 
 @media screen and (min-width: 768px) {
-    .navbar-toggler {
-        float: inline-end;
-    }
-
+   
     .aboutUs
     .img-fluid {
         height: 100%;
