@@ -29,7 +29,7 @@ a
 {
     background-color: #99236C;
     color: #FFD5E9;
-    transition: 1s ;
+    transition: 1s;
     border-style: inherit;
 }
 
@@ -64,13 +64,10 @@ footer,
     display: inline;
 }
 
-nav {
-    display: flex; 
-}
 
 .navbar-brand > img {
     width: 50%;
-    position: static;
+    position: static; 
 }
 
 .nav-link {  
@@ -100,13 +97,8 @@ img
 {
     opacity: 80%;
 }
-/* Création des styles pour ma section aboutUs et sideEffects */ 
 
-.aboutUs,
-.sideEffects
-{
-    display: flex;   
-}
+/* Création des styles pour ma section aboutUs et sideEffects */ 
 
 .aboutUs > .card,
 .sideEffects > .card {
@@ -115,7 +107,6 @@ img
 
 .card-body
 {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     font-size: 15px;
@@ -137,7 +128,7 @@ img
 
 /* Ajout des styles pour tablette et desktop */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px)and (max-width: 991px) {
 
     .navbar > .container-fluid {
         display: inline-flex;
@@ -169,7 +160,6 @@ img
         display: flex;     
         align-items: center;
         justify-content: space-between;
-    
     }
 
     .aboutUs,
