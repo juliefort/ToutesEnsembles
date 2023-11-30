@@ -113,6 +113,11 @@ img
     gap: 10px;
 }
 
+.aboutUs .nav-link
+{
+    display: inline-flex;
+}
+
 /* Création des styles pour ma section Support */ 
 
 .support {
@@ -156,6 +161,7 @@ img
 }
 
 @media screen and (min-width: 992px) {
+
     .navbar > .container-fluid {
         display: flex;     
         align-items: center;
@@ -164,6 +170,7 @@ img
 
     .aboutUs,
     .sideEffects {
+        display: flex;
         justify-content: center;
         padding: 0;
     }
